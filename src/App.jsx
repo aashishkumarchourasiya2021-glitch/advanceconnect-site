@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from './assets/logo.svg';
+import heroImage from './assets/hero.jpg';
+
 
 const PRIMARY = '#0B6CF3';
 const PRIMARY_TEXT = '#ffffff';
@@ -35,7 +37,13 @@ function Hero({onNav}){
   return (
     <section style={{background: `linear-gradient(180deg, #ffffff 0%, ${PRIMARY}10 100%)`}}>
       <div className="container mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
-        <div>
+<div className="flex justify-center">
+  <img
+    src={heroImg}
+    alt="Advance Connect Ecommerce Services"
+    className="max-w-md w-full"
+  />
+</div>
           <h2 className="text-3xl md:text-4xl font-extrabold leading-tight">Grow on marketplaces — without the daily grind</h2>
           <p className="mt-4 text-gray-600">End-to-end seller account management, listing optimisation, A+ content, PPC campaigns and fulfillment consulting — tailored for Indian sellers.</p>
 
